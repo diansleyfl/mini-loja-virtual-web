@@ -4,7 +4,6 @@
 ------------------- ESTRUTURA BASE -----------------------
 ----------------------------------------------------------
 
-**** DECLARAÇÃO DE VARIÁVEIS
 **** ESTILOS GERAIS
 **** BODY
 **** HEADER
@@ -15,27 +14,19 @@
 
 
 ----------------------------------------------------------
-------------------DECLARAÇÃO VARIÁVEIS--------------------
+---------------------ESTILOS GERAIS-----------------------
 ----------------------------------------------------------
  */
-
-:root {
-    --variavel: #AAA;
-}
-
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: open-sans;
+    font-family: cabin;
 }
 
 @font-face {
-    font-family: open-sans;
-    src: url('../fonts/open-sans-regular.ttf');
+    font-family: cabin;
+    src: url('../fonts/cabin-regular.ttf');
 }
 
 .clear {
@@ -49,13 +40,16 @@
 ---------------------------------------------------------- 
 */
 
-html, body {
+body {
     height: 100%;
+    background-image: url('../img/cruz-de-malta.jpg');
+    background-size: 100px;
 }
 
 .container {
     max-width: 1280px;
     margin: 0 auto;
+    text-align: center;
 }
 
 
@@ -65,13 +59,82 @@ html, body {
 ---------------------------------------------------------- 
 */
 
+header {
+    position: relative;
+}
 
+header img {
+    width: 100%;
+    height: 250px;
+    border-bottom: 8px solid black;
+}
+
+header h1 {
+    position: absolute;
+    width: 100%;
+    font-size: 100px;
+    top: 50px;
+    text-align: center;
+    color: white;
+}
 
 /* 
 ----------------------------------------------------------
 ---------------------PÁGINA INICIAL-----------------------
 ---------------------------------------------------------- 
 */
+
+h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 40px;
+}
+
+#produtos {
+    width: 100%;
+    max-width: 1280px;
+    padding: 20px 1%;
+    display: inline-block;
+}
+
+.produto-single {
+    width: 33.3%;
+    padding: 20px 0 50px 0;
+    float: left;
+}
+
+.produto-single p {
+    margin: 0;
+    font-size: 20px;
+    margin: 5px 0 5px 0;
+}
+
+.produto-single a {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin: 0 auto;
+    width: 70%;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.produto-single a:hover {
+    background-color: rgb(39, 39, 39);
+}
+
+#produtos img {
+    width: 300px;
+}
+
+#carrinho{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: block;
+}
 
 
 
@@ -81,7 +144,20 @@ html, body {
 ---------------------------------------------------------- 
 */
 
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    margin-top: 100px;
+}
 
+footer p {
+    font-size: 30px;
+    font-style: italic;
+    padding-top: 40px;
+}
 
 /* 
 ----------------------------------------------------------
