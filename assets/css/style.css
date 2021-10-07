@@ -103,9 +103,14 @@ h2 {
     float: left;
 }
 
-.produto-single p {
+.produto-single .descricao {
     margin: 0;
     font-size: 20px;
+    margin: 5px 0 5px 0;
+}
+
+.produto-single .preco {
+    font-size: 30px;
     margin: 5px 0 5px 0;
 }
 
@@ -127,6 +132,7 @@ h2 {
 
 #produtos img {
     width: 300px;
+    border: 5px solid black;
 }
 
 #carrinho{
@@ -175,5 +181,33 @@ footer p {
 
 
 @media screen and (max-width: 1024px) {
+
+
+    .produto-single {
+        width: 50%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 680px) {
+
+    header img {
+        width: 100%;
+        height: 150px;
+    }
+    
+    header h1 {
+        font-size: 60px;
+        top: 50px;
+        text-align: center;
+        color: white;
+    }
+
+    .produto-single {
+        width: 100%;
+    }
+
 
 }
