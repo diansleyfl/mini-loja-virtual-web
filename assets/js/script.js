@@ -46,7 +46,7 @@ const items = [
 
 inicializarLoja = () => {
     var containerProdutos = document.getElementById('produtos');
-    items.map((val)=>{
+    items.map((val) => {
        containerProdutos.innerHTML+= `
        
        <div class="produto-single">
